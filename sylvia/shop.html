@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+
+    <div class="logo">
+        <i class="fa-solid fa-gem"></i>
+        <span>Aurelia</span>
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+
+            <a href="products.html">
+                Collections
+            </a>
+        </li>
+
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="arrivals.html">New Arrivals</a></li>
+        
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+    <div class="icons">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-regular fa-heart"></i>
+
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>2</span>
+        </div>
+
+        <i class="fa-regular fa-user"></i>
+
+    </div>
+
+    <div class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+</nav>
+
+<section class="order-section">
+
+    <h2>Complete Your Order</h2>
+
+    <div class="order-container">
+
+        <!-- Product -->
+        <div class="product-card">
+
+            <img src="https://images.unsplash.com/photo-1719924998065-0c60e329ef58?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fGpld2Vscnl8ZW58MHx8MHx8fDA%3D" alt="Diamond Ring">
+
+            <div class="product-details">
+
+                <h3>Luxury Diamond Ring</h3>
+
+                <p>Price: <span id="price">24999</span></p>
+
+                <div class="quantity">
+
+                    <button id="minus">−</button>
+
+                    <input type="text" id="qty" value="1" readonly>
+
+                    <button id="plus">+</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Order Summary -->
+
+        <div class="summary">
+
+            <h3>Order Summary</h3>
+
+            <div class="row">
+                <span>Subtotal</span>
+                <span>₹<span id="subtotal">24999</span></span>
+            </div>
+
+            <div class="row">
+                <span>Shipping</span>
+                <span>FREE</span>
+            </div>
+
+            <div class="row">
+                <span>GST (5%)</span>
+                <span>₹<span id="tax">1250</span></span>
+            </div>
+
+            <hr>
+
+            <div class="row total">
+                <span>Total</span>
+                <span>₹<span id="total">26249</span></span>
+            </div>
+
+            <input type="text" id="coupon" placeholder="Enter Coupon Code">
+
+            <button id="applyCoupon">Apply Coupon</button>
+
+            <button class="order-btn">
+                Place Order
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<script src="app.js"></script>
+</body>
+</html>
