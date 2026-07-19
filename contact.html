@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+
+    <div class="logo">
+        <i class="fa-solid fa-gem"></i>
+        <span>Aurelia</span>
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+
+            <a href="products.html">
+                Collections
+            </a>
+        </li>
+
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="arrivals.html">New Arrivals</a></li>
+        
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+    <div class="icons">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-regular fa-heart"></i>
+
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>2</span>
+        </div>
+
+        <i class="fa-regular fa-user"></i>
+
+    </div>
+
+    <div class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+</nav>
+<section class="contact" id="contact">
+
+    <div class="contact-heading">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you. Get in touch with us anytime!</p>
+    </div>
+
+    <div class="contact-container">
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+
+            <h3>Get In Touch</h3>
+
+            <div class="info-box">
+                <span>📍</span>
+                <p>123 Luxury Street, Delhi, India</p>
+            </div>
+
+            <div class="info-box">
+                <span>📞</span>
+                <p>+91 98765 43210</p>
+            </div>
+
+            <div class="info-box">
+                <span>📧</span>
+                <p>support@aurelia.com</p>
+            </div>
+
+            <div class="info-box">
+                <span>🕒</span>
+                <p>Mon - Sat : 10:00 AM - 8:00 PM</p>
+            </div>
+
+        </div>
+
+        <!-- Contact Form -->
+
+        <div class="contact-form">
+
+            <form id="contactForm">
+
+                <input
+                type="text"
+                id="name"
+                placeholder="Your Name">
+
+                <input
+                type="email"
+                id="email"
+                placeholder="Your Email">
+
+                <input
+                type="text"
+                id="subject"
+                placeholder="Subject">
+
+                <textarea
+                id="message"
+                rows="6"
+                placeholder="Write Your Message"></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
